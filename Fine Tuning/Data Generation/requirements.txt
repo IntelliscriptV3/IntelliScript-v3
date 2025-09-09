@@ -1,0 +1,2 @@
+datasets>=2.13.0
+huggingface_hub>=0.17.4
