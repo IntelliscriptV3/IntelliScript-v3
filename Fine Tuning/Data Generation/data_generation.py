@@ -52,3 +52,112 @@ with open(output_file2, "w", encoding="utf-8") as f:
         f.write(json.dumps(ex, ensure_ascii=False) + "\n")
 
 print(f"✅ Saved {output_file2} ({len(chat_data2)} rows)")
+
+
+
+# UCSC-VLAA/m23k-tokenized : https://huggingface.co/datasets/UCSC-VLAA/m23k-tokenized
+ds3 = load_dataset("UCSC-VLAA/m23k-tokenized",split="train")
+
+def convert_chat3(row):
+    return {
+        "messages": [
+            {"role": "user", "content": row["prompt"]},
+            {"role": "assistant", "content": row["answer_string"]}
+        ]
+    }
+
+chat_data3 = ds3.map(convert_chat3, remove_columns=ds3 .column_names)
+
+output_file3 = "data_generated/train_chat3.jsonl"
+with open(output_file3, "w", encoding="utf-8") as f:
+    for ex in chat_data3:
+        f.write(json.dumps(ex, ensure_ascii=False) + "\n")
+
+print(f"✅ Saved {output_file3} ({len(chat_data3)} rows)")
+
+# MedMcQA: https://huggingface.co/datasets/medmcqa/medmcqa
+ds_mcq = load_dataset("openlifescienceai/medmcqa",split="train")
+
+# ---- Step 2: Conversion function ----
+def convert_mcq(row):
+    # Format the options
+    options_text = f"A) {row['opa']}\nB) {row['opb']}\nC) {row['opc']}\nD) {row['opd']}"
+    
+    # Build user prompt
+    user_prompt = f"Question: {row['question']}\nOptions:\n{options_text}\nChoose the correct option."
+    
+    # Build assistant answer (correct option + explanation)
+    assistant_answer = f"The correct answer is {row['cop']}.\nExplanation: {row['exp']}"
+    
+    return {
+        "messages": [
+            {"role": "user", "content": user_prompt},
+            {"role": "assistant", "content": assistant_answer}
+        ]
+    }
+
+# ---- Step 3: Apply conversion ----
+chat_data_mcq = ds_mcq.map(convert_mcq, remove_columns=ds_mcq.column_names)
+
+# ---- Step 4: Save to JSONL ----
+output_file_mcq = "data_generated/train_chat_mcq.jsonl"
+with open(output_file_mcq, "w", encoding="utf-8") as f:
+    for ex in chat_data_mcq:
+        f.write(json.dumps(ex, ensure_ascii=False) + "\n")
+
+print(f"✅ Saved {output_file_mcq} ({len(chat_data_mcq)} rows)")
+
+
+# PubmedQA: qiaojin/PubMedQA"
+ds4 = load_dataset("qiaojin/PubMedQA", "pqa_artificial",split="train")
+
+def convert_chat4(row):
+    return {
+        "messages": [
+            {"role": "user", "content": row["question"]},
+            {"role": "assistant", "content": row["long_answer"]}
+        ]
+    }
+
+chat_data4 = ds4.map(convert_chat4, remove_columns=ds4.column_names)
+
+output_file4 = "data_generated/train_chat4.jsonl"
+with open(output_file4, "w", encoding="utf-8") as f:
+    for ex in chat_data4:
+        f.write(json.dumps(ex, ensure_ascii=False) + "\n")
+
+print(f"✅ Saved {output_file4} ({len(chat_data4)} rows)")
+
+# MedReason "UCSC-VLAA/MedReason"
+
+# ---- Step 1: Load dataset ----
+ds_mcq2 = load_dataset("UCSC-VLAA/MedReason", split="train")
+
+# ---- Step 2: Conversion function ----
+def convert_mcq2(row):
+    # User prompt: question + options
+    user_prompt = f"Question: {row['question']}\nOptions:\n{row['options']}\nChoose the correct option."
+    
+    # Assistant reply: correct answer
+    assistant_answer = f"The correct answer is: {row['answer']}."
+    
+    return {
+        "messages": [
+            {"role": "user", "content": user_prompt},
+            {"role": "assistant", "content": assistant_answer}
+        ]
+    }
+
+# ---- Step 3: Apply conversion ----
+chat_data_mcq2 = ds_mcq2.map(convert_mcq2, remove_columns=ds_mcq2.column_names)
+
+# ---- Step 4: Save as JSONL ----
+output_file_mcq2 = "data_generated/train_chat_mcq2.jsonl"
+with open(output_file_mcq2, "w", encoding="utf-8") as f:
+    for ex in chat_data_mcq2:
+        f.write(json.dumps(ex, ensure_ascii=False) + "\n")
+
+print(f"✅ Saved {output_file_mcq2} ({len(chat_data_mcq2)} rows)")
+
+
+
