@@ -159,5 +159,29 @@ with open(output_file_mcq2, "w", encoding="utf-8") as f:
 
 print(f"✅ Saved {output_file_mcq2} ({len(chat_data_mcq2)} rows)")
 
+input_files = [
+    "data_generated/train_chat.jsonl",
+    "data_generated/train_chat2.jsonl",
+    "data_generated/train_chat3.jsonl",
+    "data_generated/train_chat_mcq.jsonl",
+    "data_generated/train_chat4.jsonl",
+    "data_generated/train_chat_mcq2.jsonl"
+]
 
+output_combined = "combined_dataset.jsonl"
 
+seen = set()
+with open(output_combined, "w", encoding="utf-8") as outfile:
+    for fname in input_files:
+        with open(fname, "r", encoding="utf-8") as infile:
+            for line in infile:
+                line = line.strip()
+                if not line:
+                    continue
+                obj = json.loads(line)
+                key = json.dumps(obj, sort_keys=True)
+                if key not in seen:   # deduplicate
+                    seen.add(key)
+                    outfile.write(line + "\n")
+
+print(f"✅ Combined dataset saved to {output_combined} ({len(seen)} unique rows)")
