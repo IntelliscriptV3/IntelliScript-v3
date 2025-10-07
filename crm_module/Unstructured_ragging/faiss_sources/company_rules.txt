@@ -1,0 +1,500 @@
+1. [Academic Rules] Plagiarism in any form is strictly prohibited and will result in disciplinary action.
+2. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+3. [Examination Rules] Talking or borrowing materials during exams is strictly forbidden.
+4. [Library Policies] Students may borrow up to 3 books at a time for 14 days.
+5. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+6. [Hostel & Residential Rules] Hostel gates will close at 10:00 PM; late entry requires prior approval.
+7. [Safety & Security Policies] Emergency contact numbers must be updated with the administration.
+8. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+9. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+10. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+11. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+12. [Academic Rules] Students are required to participate in all mandatory workshops and seminars.
+13. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+14. [Examination Rules] Cheating or impersonation will result in suspension for at least one semester.
+15. [Library Policies] Students may borrow up to 3 books at a time for 14 days.
+16. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+17. [Hostel & Residential Rules] Visitors must be registered at the warden’s office before entry.
+18. [Safety & Security Policies] Emergency contact numbers must be updated with the administration.
+19. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+20. [Research & Ethics Policies] All research involving human participants requires ethical clearance.
+21. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+22. [General Code of Conduct] Smoking and alcohol consumption are not allowed on campus.
+23. [Academic Rules] Any changes to academic schedules will be communicated through the official portal.
+24. [Attendance Policies] Late arrivals of more than 15 minutes will be marked absent.
+25. [Examination Rules] Exam papers must be submitted before leaving the hall, even if unanswered.
+26. [Library Policies] Reference books and journals are not allowed to be taken outside the library.
+27. [IT & Digital Use Policies] Downloading pirated or illegal content is forbidden.
+28. [Hostel & Residential Rules] Possession of alcohol, drugs, or weapons will result in expulsion from the hostel.
+29. [Safety & Security Policies] All students must carry their ID cards while on campus.
+30. [Administrative Policies] Refund of tuition fees will follow the institute’s refund policy.
+31. [Research & Ethics Policies] Intellectual property created using institute resources belongs to the institute.
+32. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+33. [General Code of Conduct] Use of abusive language is strictly forbidden in classrooms and hostels.
+34. [Academic Rules] Students are required to participate in all mandatory workshops and seminars.
+35. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+36. [Examination Rules] Talking or borrowing materials during exams is strictly forbidden.
+37. [Library Policies] Reference books and journals are not allowed to be taken outside the library.
+38. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+39. [Hostel & Residential Rules] Possession of alcohol, drugs, or weapons will result in expulsion from the hostel.
+40. [Safety & Security Policies] Unauthorized entry into restricted areas is not allowed.
+41. [Administrative Policies] Requests for official transcripts must be made through the registrar’s office.
+42. [Research & Ethics Policies] Collaborative research must be approved by the department head.
+43. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+44. [General Code of Conduct] Use of abusive language is strictly forbidden in classrooms and hostels.
+45. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+46. [Attendance Policies] Attendance shortages may lead to withholding of hall tickets for exams.
+47. [Examination Rules] Exam papers must be submitted before leaving the hall, even if unanswered.
+48. [Library Policies] Silence must be maintained in the library at all times.
+49. [IT & Digital Use Policies] Sharing login credentials is strictly prohibited.
+50. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+51. [Safety & Security Policies] Fire drills will be conducted once every semester.
+52. [Administrative Policies] Only official notices displayed on the portal will be considered valid.
+53. [Research & Ethics Policies] Intellectual property created using institute resources belongs to the institute.
+54. [Staff & Faculty Policies] Staff must undergo annual training on academic integrity.
+55. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+56. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+57. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+58. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+59. [Library Policies] Late return of books will incur a fine of Rs. 10 per day per book.
+60. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+61. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+62. [Safety & Security Policies] Fire drills will be conducted once every semester.
+63. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+64. [Research & Ethics Policies] All research involving human participants requires ethical clearance.
+65. [Staff & Faculty Policies] Confidential student information must not be disclosed without consent.
+66. [General Code of Conduct] Use of abusive language is strictly forbidden in classrooms and hostels.
+67. [Academic Rules] Any changes to academic schedules will be communicated through the official portal.
+68. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+69. [Examination Rules] Cheating or impersonation will result in suspension for at least one semester.
+70. [Library Policies] Late return of books will incur a fine of Rs. 10 per day per book.
+71. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+72. [Hostel & Residential Rules] Visitors must be registered at the warden’s office before entry.
+73. [Safety & Security Policies] Students must immediately report any suspicious activity on campus.
+74. [Administrative Policies] Any change in personal details must be reported within 7 working days.
+75. [Research & Ethics Policies] Intellectual property created using institute resources belongs to the institute.
+76. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+77. [General Code of Conduct] Use of abusive language is strictly forbidden in classrooms and hostels.
+78. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+79. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+80. [Examination Rules] Talking or borrowing materials during exams is strictly forbidden.
+81. [Library Policies] Students may borrow up to 3 books at a time for 14 days.
+82. [IT & Digital Use Policies] Students must not attempt to bypass firewalls or security systems.
+83. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+84. [Safety & Security Policies] Students must immediately report any suspicious activity on campus.
+85. [Administrative Policies] Refund of tuition fees will follow the institute’s refund policy.
+86. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+87. [Staff & Faculty Policies] Confidential student information must not be disclosed without consent.
+88. [General Code of Conduct] Students must wear appropriate attire on campus.
+89. [Academic Rules] Students must maintain a minimum GPA of 2.5 to remain in good academic standing.
+90. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+91. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+92. [Library Policies] Students may borrow up to 3 books at a time for 14 days.
+93. [IT & Digital Use Policies] Students must not attempt to bypass firewalls or security systems.
+94. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+95. [Safety & Security Policies] Fire drills will be conducted once every semester.
+96. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+97. [Research & Ethics Policies] All research involving human participants requires ethical clearance.
+98. [Staff & Faculty Policies] Staff must undergo annual training on academic integrity.
+99. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+100. [Academic Rules] Any changes to academic schedules will be communicated through the official portal.
+101. [Attendance Policies] Late arrivals of more than 15 minutes will be marked absent.
+102. [Examination Rules] Use of programmable calculators or smart devices is not permitted.
+103. [Library Policies] Silence must be maintained in the library at all times.
+104. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+105. [Hostel & Residential Rules] Possession of alcohol, drugs, or weapons will result in expulsion from the hostel.
+106. [Safety & Security Policies] All students must carry their ID cards while on campus.
+107. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+108. [Research & Ethics Policies] Fabrication or falsification of research data is a punishable offense.
+109. [Staff & Faculty Policies] Staff must undergo annual training on academic integrity.
+110. [General Code of Conduct] Students must wear appropriate attire on campus.
+111. [Academic Rules] Plagiarism in any form is strictly prohibited and will result in disciplinary action.
+112. [Attendance Policies] Medical certificates must be submitted within 3 working days of absence due to illness.
+113. [Examination Rules] Exam papers must be submitted before leaving the hall, even if unanswered.
+114. [Library Policies] Library membership will be revoked for repeated violations.
+115. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+116. [Hostel & Residential Rules] Possession of alcohol, drugs, or weapons will result in expulsion from the hostel.
+117. [Safety & Security Policies] Students must immediately report any suspicious activity on campus.
+118. [Administrative Policies] Requests for official transcripts must be made through the registrar’s office.
+119. [Research & Ethics Policies] Intellectual property created using institute resources belongs to the institute.
+120. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+121. [General Code of Conduct] Students must wear appropriate attire on campus.
+122. [Academic Rules] Any changes to academic schedules will be communicated through the official portal.
+123. [Attendance Policies] Attendance shortages may lead to withholding of hall tickets for exams.
+124. [Examination Rules] Talking or borrowing materials during exams is strictly forbidden.
+125. [Library Policies] Late return of books will incur a fine of Rs. 10 per day per book.
+126. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+127. [Hostel & Residential Rules] Possession of alcohol, drugs, or weapons will result in expulsion from the hostel.
+128. [Safety & Security Policies] Fire drills will be conducted once every semester.
+129. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+130. [Research & Ethics Policies] All research involving human participants requires ethical clearance.
+131. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+132. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+133. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+134. [Attendance Policies] Medical certificates must be submitted within 3 working days of absence due to illness.
+135. [Examination Rules] Talking or borrowing materials during exams is strictly forbidden.
+136. [Library Policies] Silence must be maintained in the library at all times.
+137. [IT & Digital Use Policies] Students must not attempt to bypass firewalls or security systems.
+138. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+139. [Safety & Security Policies] All students must carry their ID cards while on campus.
+140. [Administrative Policies] Any change in personal details must be reported within 7 working days.
+141. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+142. [Staff & Faculty Policies] Staff must undergo annual training on academic integrity.
+143. [General Code of Conduct] Smoking and alcohol consumption are not allowed on campus.
+144. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+145. [Attendance Policies] Attendance shortages may lead to withholding of hall tickets for exams.
+146. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+147. [Library Policies] Library membership will be revoked for repeated violations.
+148. [IT & Digital Use Policies] Students must not attempt to bypass firewalls or security systems.
+149. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+150. [Safety & Security Policies] Students must immediately report any suspicious activity on campus.
+151. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+152. [Research & Ethics Policies] Fabrication or falsification of research data is a punishable offense.
+153. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+154. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+155. [Academic Rules] Students must maintain a minimum GPA of 2.5 to remain in good academic standing.
+156. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+157. [Examination Rules] Use of programmable calculators or smart devices is not permitted.
+158. [Library Policies] Late return of books will incur a fine of Rs. 10 per day per book.
+159. [IT & Digital Use Policies] Sharing login credentials is strictly prohibited.
+160. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+161. [Safety & Security Policies] Students must immediately report any suspicious activity on campus.
+162. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+163. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+164. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+165. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+166. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+167. [Attendance Policies] Medical certificates must be submitted within 3 working days of absence due to illness.
+168. [Examination Rules] Cheating or impersonation will result in suspension for at least one semester.
+169. [Library Policies] Reference books and journals are not allowed to be taken outside the library.
+170. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+171. [Hostel & Residential Rules] Visitors must be registered at the warden’s office before entry.
+172. [Safety & Security Policies] All students must carry their ID cards while on campus.
+173. [Administrative Policies] Requests for official transcripts must be made through the registrar’s office.
+174. [Research & Ethics Policies] All research involving human participants requires ethical clearance.
+175. [Staff & Faculty Policies] Staff must undergo annual training on academic integrity.
+176. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+177. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+178. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+179. [Examination Rules] Exam papers must be submitted before leaving the hall, even if unanswered.
+180. [Library Policies] Library membership will be revoked for repeated violations.
+181. [IT & Digital Use Policies] Students must not attempt to bypass firewalls or security systems.
+182. [Hostel & Residential Rules] Possession of alcohol, drugs, or weapons will result in expulsion from the hostel.
+183. [Safety & Security Policies] All students must carry their ID cards while on campus.
+184. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+185. [Research & Ethics Policies] Collaborative research must be approved by the department head.
+186. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+187. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+188. [Academic Rules] Plagiarism in any form is strictly prohibited and will result in disciplinary action.
+189. [Attendance Policies] Medical certificates must be submitted within 3 working days of absence due to illness.
+190. [Examination Rules] Use of programmable calculators or smart devices is not permitted.
+191. [Library Policies] Reference books and journals are not allowed to be taken outside the library.
+192. [IT & Digital Use Policies] Downloading pirated or illegal content is forbidden.
+193. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+194. [Safety & Security Policies] All students must carry their ID cards while on campus.
+195. [Administrative Policies] Only official notices displayed on the portal will be considered valid.
+196. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+197. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+198. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+199. [Academic Rules] Students must maintain a minimum GPA of 2.5 to remain in good academic standing.
+200. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+201. [Examination Rules] Exam papers must be submitted before leaving the hall, even if unanswered.
+202. [Library Policies] Silence must be maintained in the library at all times.
+203. [IT & Digital Use Policies] Students must not attempt to bypass firewalls or security systems.
+204. [Hostel & Residential Rules] Visitors must be registered at the warden’s office before entry.
+205. [Safety & Security Policies] Fire drills will be conducted once every semester.
+206. [Administrative Policies] Requests for official transcripts must be made through the registrar’s office.
+207. [Research & Ethics Policies] Fabrication or falsification of research data is a punishable offense.
+208. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+209. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+210. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+211. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+212. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+213. [Library Policies] Silence must be maintained in the library at all times.
+214. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+215. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+216. [Safety & Security Policies] Emergency contact numbers must be updated with the administration.
+217. [Administrative Policies] Any change in personal details must be reported within 7 working days.
+218. [Research & Ethics Policies] All research involving human participants requires ethical clearance.
+219. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+220. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+221. [Academic Rules] Plagiarism in any form is strictly prohibited and will result in disciplinary action.
+222. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+223. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+224. [Library Policies] Silence must be maintained in the library at all times.
+225. [IT & Digital Use Policies] Downloading pirated or illegal content is forbidden.
+226. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+227. [Safety & Security Policies] Unauthorized entry into restricted areas is not allowed.
+228. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+229. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+230. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+231. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+232. [Academic Rules] Plagiarism in any form is strictly prohibited and will result in disciplinary action.
+233. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+234. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+235. [Library Policies] Library membership will be revoked for repeated violations.
+236. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+237. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+238. [Safety & Security Policies] Fire drills will be conducted once every semester.
+239. [Administrative Policies] Any change in personal details must be reported within 7 working days.
+240. [Research & Ethics Policies] Fabrication or falsification of research data is a punishable offense.
+241. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+242. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+243. [Academic Rules] Any changes to academic schedules will be communicated through the official portal.
+244. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+245. [Examination Rules] Use of programmable calculators or smart devices is not permitted.
+246. [Library Policies] Library membership will be revoked for repeated violations.
+247. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+248. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+249. [Safety & Security Policies] Emergency contact numbers must be updated with the administration.
+250. [Administrative Policies] Refund of tuition fees will follow the institute’s refund policy.
+251. [Research & Ethics Policies] Collaborative research must be approved by the department head.
+252. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+253. [General Code of Conduct] Students must wear appropriate attire on campus.
+254. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+255. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+256. [Examination Rules] Talking or borrowing materials during exams is strictly forbidden.
+257. [Library Policies] Silence must be maintained in the library at all times.
+258. [IT & Digital Use Policies] Students must not attempt to bypass firewalls or security systems.
+259. [Hostel & Residential Rules] Possession of alcohol, drugs, or weapons will result in expulsion from the hostel.
+260. [Safety & Security Policies] Unauthorized entry into restricted areas is not allowed.
+261. [Administrative Policies] Only official notices displayed on the portal will be considered valid.
+262. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+263. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+264. [General Code of Conduct] Use of abusive language is strictly forbidden in classrooms and hostels.
+265. [Academic Rules] Plagiarism in any form is strictly prohibited and will result in disciplinary action.
+266. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+267. [Examination Rules] Use of programmable calculators or smart devices is not permitted.
+268. [Library Policies] Reference books and journals are not allowed to be taken outside the library.
+269. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+270. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+271. [Safety & Security Policies] All students must carry their ID cards while on campus.
+272. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+273. [Research & Ethics Policies] All research involving human participants requires ethical clearance.
+274. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+275. [General Code of Conduct] Use of abusive language is strictly forbidden in classrooms and hostels.
+276. [Academic Rules] Students are required to participate in all mandatory workshops and seminars.
+277. [Attendance Policies] Medical certificates must be submitted within 3 working days of absence due to illness.
+278. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+279. [Library Policies] Library membership will be revoked for repeated violations.
+280. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+281. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+282. [Safety & Security Policies] Fire drills will be conducted once every semester.
+283. [Administrative Policies] Any change in personal details must be reported within 7 working days.
+284. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+285. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+286. [General Code of Conduct] Use of abusive language is strictly forbidden in classrooms and hostels.
+287. [Academic Rules] Students must maintain a minimum GPA of 2.5 to remain in good academic standing.
+288. [Attendance Policies] Medical certificates must be submitted within 3 working days of absence due to illness.
+289. [Examination Rules] Cheating or impersonation will result in suspension for at least one semester.
+290. [Library Policies] Late return of books will incur a fine of Rs. 10 per day per book.
+291. [IT & Digital Use Policies] Students must not attempt to bypass firewalls or security systems.
+292. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+293. [Safety & Security Policies] Unauthorized entry into restricted areas is not allowed.
+294. [Administrative Policies] Refund of tuition fees will follow the institute’s refund policy.
+295. [Research & Ethics Policies] Intellectual property created using institute resources belongs to the institute.
+296. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+297. [General Code of Conduct] Smoking and alcohol consumption are not allowed on campus.
+298. [Academic Rules] Any changes to academic schedules will be communicated through the official portal.
+299. [Attendance Policies] Attendance shortages may lead to withholding of hall tickets for exams.
+300. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+301. [Library Policies] Students may borrow up to 3 books at a time for 14 days.
+302. [IT & Digital Use Policies] Downloading pirated or illegal content is forbidden.
+303. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+304. [Safety & Security Policies] Students must immediately report any suspicious activity on campus.
+305. [Administrative Policies] Any change in personal details must be reported within 7 working days.
+306. [Research & Ethics Policies] Intellectual property created using institute resources belongs to the institute.
+307. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+308. [General Code of Conduct] Smoking and alcohol consumption are not allowed on campus.
+309. [Academic Rules] Students must maintain a minimum GPA of 2.5 to remain in good academic standing.
+310. [Attendance Policies] Medical certificates must be submitted within 3 working days of absence due to illness.
+311. [Examination Rules] Use of programmable calculators or smart devices is not permitted.
+312. [Library Policies] Library membership will be revoked for repeated violations.
+313. [IT & Digital Use Policies] Downloading pirated or illegal content is forbidden.
+314. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+315. [Safety & Security Policies] Unauthorized entry into restricted areas is not allowed.
+316. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+317. [Research & Ethics Policies] All research involving human participants requires ethical clearance.
+318. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+319. [General Code of Conduct] Students must wear appropriate attire on campus.
+320. [Academic Rules] Students are required to participate in all mandatory workshops and seminars.
+321. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+322. [Examination Rules] Cheating or impersonation will result in suspension for at least one semester.
+323. [Library Policies] Late return of books will incur a fine of Rs. 10 per day per book.
+324. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+325. [Hostel & Residential Rules] Hostel gates will close at 10:00 PM; late entry requires prior approval.
+326. [Safety & Security Policies] Emergency contact numbers must be updated with the administration.
+327. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+328. [Research & Ethics Policies] Intellectual property created using institute resources belongs to the institute.
+329. [Staff & Faculty Policies] Confidential student information must not be disclosed without consent.
+330. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+331. [Academic Rules] Students are required to participate in all mandatory workshops and seminars.
+332. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+333. [Examination Rules] Use of programmable calculators or smart devices is not permitted.
+334. [Library Policies] Students may borrow up to 3 books at a time for 14 days.
+335. [IT & Digital Use Policies] Sharing login credentials is strictly prohibited.
+336. [Hostel & Residential Rules] Possession of alcohol, drugs, or weapons will result in expulsion from the hostel.
+337. [Safety & Security Policies] All students must carry their ID cards while on campus.
+338. [Administrative Policies] Requests for official transcripts must be made through the registrar’s office.
+339. [Research & Ethics Policies] Collaborative research must be approved by the department head.
+340. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+341. [General Code of Conduct] Students must wear appropriate attire on campus.
+342. [Academic Rules] Students are required to participate in all mandatory workshops and seminars.
+343. [Attendance Policies] Late arrivals of more than 15 minutes will be marked absent.
+344. [Examination Rules] Exam papers must be submitted before leaving the hall, even if unanswered.
+345. [Library Policies] Library membership will be revoked for repeated violations.
+346. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+347. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+348. [Safety & Security Policies] Emergency contact numbers must be updated with the administration.
+349. [Administrative Policies] Refund of tuition fees will follow the institute’s refund policy.
+350. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+351. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+352. [General Code of Conduct] Students must wear appropriate attire on campus.
+353. [Academic Rules] Students must maintain a minimum GPA of 2.5 to remain in good academic standing.
+354. [Attendance Policies] Late arrivals of more than 15 minutes will be marked absent.
+355. [Examination Rules] Cheating or impersonation will result in suspension for at least one semester.
+356. [Library Policies] Late return of books will incur a fine of Rs. 10 per day per book.
+357. [IT & Digital Use Policies] Students must not attempt to bypass firewalls or security systems.
+358. [Hostel & Residential Rules] Visitors must be registered at the warden’s office before entry.
+359. [Safety & Security Policies] All students must carry their ID cards while on campus.
+360. [Administrative Policies] Any change in personal details must be reported within 7 working days.
+361. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+362. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+363. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+364. [Academic Rules] Students must maintain a minimum GPA of 2.5 to remain in good academic standing.
+365. [Attendance Policies] Late arrivals of more than 15 minutes will be marked absent.
+366. [Examination Rules] Exam papers must be submitted before leaving the hall, even if unanswered.
+367. [Library Policies] Students may borrow up to 3 books at a time for 14 days.
+368. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+369. [Hostel & Residential Rules] Hostel gates will close at 10:00 PM; late entry requires prior approval.
+370. [Safety & Security Policies] Fire drills will be conducted once every semester.
+371. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+372. [Research & Ethics Policies] Fabrication or falsification of research data is a punishable offense.
+373. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+374. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+375. [Academic Rules] Students must maintain a minimum GPA of 2.5 to remain in good academic standing.
+376. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+377. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+378. [Library Policies] Late return of books will incur a fine of Rs. 10 per day per book.
+379. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+380. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+381. [Safety & Security Policies] Unauthorized entry into restricted areas is not allowed.
+382. [Administrative Policies] Any change in personal details must be reported within 7 working days.
+383. [Research & Ethics Policies] Fabrication or falsification of research data is a punishable offense.
+384. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+385. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+386. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+387. [Attendance Policies] Medical certificates must be submitted within 3 working days of absence due to illness.
+388. [Examination Rules] Talking or borrowing materials during exams is strictly forbidden.
+389. [Library Policies] Silence must be maintained in the library at all times.
+390. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+391. [Hostel & Residential Rules] Hostel gates will close at 10:00 PM; late entry requires prior approval.
+392. [Safety & Security Policies] All students must carry their ID cards while on campus.
+393. [Administrative Policies] Only official notices displayed on the portal will be considered valid.
+394. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+395. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+396. [General Code of Conduct] Use of abusive language is strictly forbidden in classrooms and hostels.
+397. [Academic Rules] Students are required to participate in all mandatory workshops and seminars.
+398. [Attendance Policies] Attendance shortages may lead to withholding of hall tickets for exams.
+399. [Examination Rules] Talking or borrowing materials during exams is strictly forbidden.
+400. [Library Policies] Students may borrow up to 3 books at a time for 14 days.
+401. [IT & Digital Use Policies] Downloading pirated or illegal content is forbidden.
+402. [Hostel & Residential Rules] Visitors must be registered at the warden’s office before entry.
+403. [Safety & Security Policies] Unauthorized entry into restricted areas is not allowed.
+404. [Administrative Policies] Any change in personal details must be reported within 7 working days.
+405. [Research & Ethics Policies] All research involving human participants requires ethical clearance.
+406. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+407. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+408. [Academic Rules] Plagiarism in any form is strictly prohibited and will result in disciplinary action.
+409. [Attendance Policies] Late arrivals of more than 15 minutes will be marked absent.
+410. [Examination Rules] Cheating or impersonation will result in suspension for at least one semester.
+411. [Library Policies] Students may borrow up to 3 books at a time for 14 days.
+412. [IT & Digital Use Policies] Downloading pirated or illegal content is forbidden.
+413. [Hostel & Residential Rules] Visitors must be registered at the warden’s office before entry.
+414. [Safety & Security Policies] Fire drills will be conducted once every semester.
+415. [Administrative Policies] Requests for official transcripts must be made through the registrar’s office.
+416. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+417. [Staff & Faculty Policies] Confidential student information must not be disclosed without consent.
+418. [General Code of Conduct] Ragging in any form is strictly prohibited and will lead to expulsion.
+419. [Academic Rules] Plagiarism in any form is strictly prohibited and will result in disciplinary action.
+420. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+421. [Examination Rules] Cheating or impersonation will result in suspension for at least one semester.
+422. [Library Policies] Library membership will be revoked for repeated violations.
+423. [IT & Digital Use Policies] Sharing login credentials is strictly prohibited.
+424. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+425. [Safety & Security Policies] Students must immediately report any suspicious activity on campus.
+426. [Administrative Policies] Requests for official transcripts must be made through the registrar’s office.
+427. [Research & Ethics Policies] Collaborative research must be approved by the department head.
+428. [Staff & Faculty Policies] Teachers should maintain office hours for student consultations.
+429. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+430. [Academic Rules] Any changes to academic schedules will be communicated through the official portal.
+431. [Attendance Policies] Late arrivals of more than 15 minutes will be marked absent.
+432. [Examination Rules] Use of programmable calculators or smart devices is not permitted.
+433. [Library Policies] Library membership will be revoked for repeated violations.
+434. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+435. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+436. [Safety & Security Policies] All students must carry their ID cards while on campus.
+437. [Administrative Policies] Only official notices displayed on the portal will be considered valid.
+438. [Research & Ethics Policies] Collaborative research must be approved by the department head.
+439. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+440. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+441. [Academic Rules] Students must maintain a minimum GPA of 2.5 to remain in good academic standing.
+442. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+443. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+444. [Library Policies] Library membership will be revoked for repeated violations.
+445. [IT & Digital Use Policies] Sharing login credentials is strictly prohibited.
+446. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+447. [Safety & Security Policies] Unauthorized entry into restricted areas is not allowed.
+448. [Administrative Policies] Fee payments must be completed by the 10th of each semester.
+449. [Research & Ethics Policies] Fabrication or falsification of research data is a punishable offense.
+450. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+451. [General Code of Conduct] Students must wear appropriate attire on campus.
+452. [Academic Rules] Students are required to participate in all mandatory workshops and seminars.
+453. [Attendance Policies] Attendance shortages may lead to withholding of hall tickets for exams.
+454. [Examination Rules] Exam papers must be submitted before leaving the hall, even if unanswered.
+455. [Library Policies] Late return of books will incur a fine of Rs. 10 per day per book.
+456. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+457. [Hostel & Residential Rules] Hostel gates will close at 10:00 PM; late entry requires prior approval.
+458. [Safety & Security Policies] Fire drills will be conducted once every semester.
+459. [Administrative Policies] Only official notices displayed on the portal will be considered valid.
+460. [Research & Ethics Policies] Intellectual property created using institute resources belongs to the institute.
+461. [Staff & Faculty Policies] Confidential student information must not be disclosed without consent.
+462. [General Code of Conduct] Use of abusive language is strictly forbidden in classrooms and hostels.
+463. [Academic Rules] Any changes to academic schedules will be communicated through the official portal.
+464. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+465. [Examination Rules] Exam papers must be submitted before leaving the hall, even if unanswered.
+466. [Library Policies] Reference books and journals are not allowed to be taken outside the library.
+467. [IT & Digital Use Policies] All online classes must be attended using official institute accounts.
+468. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+469. [Safety & Security Policies] Students must immediately report any suspicious activity on campus.
+470. [Administrative Policies] Requests for official transcripts must be made through the registrar’s office.
+471. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+472. [Staff & Faculty Policies] Staff must undergo annual training on academic integrity.
+473. [General Code of Conduct] Smoking and alcohol consumption are not allowed on campus.
+474. [Academic Rules] All assignments must be submitted by the specified deadline unless prior approval for extension is granted.
+475. [Attendance Policies] Attendance will be recorded at the beginning of each class.
+476. [Examination Rules] Cheating or impersonation will result in suspension for at least one semester.
+477. [Library Policies] Late return of books will incur a fine of Rs. 10 per day per book.
+478. [IT & Digital Use Policies] Sharing login credentials is strictly prohibited.
+479. [Hostel & Residential Rules] Cooking inside hostel rooms is strictly prohibited.
+480. [Safety & Security Policies] Students must immediately report any suspicious activity on campus.
+481. [Administrative Policies] Requests for official transcripts must be made through the registrar’s office.
+482. [Research & Ethics Policies] Intellectual property created using institute resources belongs to the institute.
+483. [Staff & Faculty Policies] All faculty must follow the prescribed curriculum without unauthorized changes.
+484. [General Code of Conduct] Students must respect diversity and avoid discriminatory behavior.
+485. [Academic Rules] Students must maintain a minimum GPA of 2.5 to remain in good academic standing.
+486. [Attendance Policies] Late arrivals of more than 15 minutes will be marked absent.
+487. [Examination Rules] Exam papers must be submitted before leaving the hall, even if unanswered.
+488. [Library Policies] Students may borrow up to 3 books at a time for 14 days.
+489. [IT & Digital Use Policies] Institute Wi-Fi should only be used for academic purposes.
+490. [Hostel & Residential Rules] Noise levels must be kept low to avoid disturbing others.
+491. [Safety & Security Policies] Students must immediately report any suspicious activity on campus.
+492. [Administrative Policies] Refund of tuition fees will follow the institute’s refund policy.
+493. [Research & Ethics Policies] Students must acknowledge funding sources in all publications.
+494. [Staff & Faculty Policies] Faculty must submit grades within 10 working days after examinations.
+495. [General Code of Conduct] Students must wear appropriate attire on campus.
+496. [Academic Rules] Students are required to participate in all mandatory workshops and seminars.
+497. [Attendance Policies] Students must attend at least 75% of lectures and tutorials to be eligible for examinations.
+498. [Examination Rules] Students must carry a valid ID card to enter the examination hall.
+499. [Library Policies] Reference books and journals are not allowed to be taken outside the library.
+500. [IT & Digital Use Policies] Downloading pirated or illegal content is forbidden.

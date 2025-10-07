@@ -1,0 +1,7 @@
+# .gitignore
+venv/
+
+# ------------------------
+# Python cache and logs
+# ------------------------
+__pycache__/

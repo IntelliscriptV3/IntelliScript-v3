@@ -13,10 +13,12 @@ GROUP_SIZE = 3
 TOP_TAGS = 5
 TOP_K = 5 
 
-# ---------------- FAISS FILES ----------------
-INDEX_FILE = os.path.join("FAISS_DB", "company_rules.index")
-EMB_FILE = os.path.join("FAISS_DB", "company_embeddings.npy")
-META_FILE = os.path.join("FAISS_DB", "company_metadata.json")
+# Base directory of this config.py file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+INDEX_FILE = os.path.join(BASE_DIR, "FAISS_DB", "company_rules.index")
+EMB_FILE = os.path.join(BASE_DIR, "FAISS_DB", "company_embeddings.npy")
+META_FILE = os.path.join(BASE_DIR, "FAISS_DB", "company_metadata.json")
 
 # ---------------- SOURCE FOLDER ----------------
 SOURCE_FOLDER = "faiss_sources"
