@@ -1,0 +1,46 @@
+fastapi
+uvicorn
+pydantic
+requests
+streamlit
+plotly
+
+openai
+sentence_transformers
+faiss-cpu
+numpy
+tqdm
+pdfplumber
+pdf2image
+python-docx
+python-pptx
+pytesseract
+beautifulsoup4
+pandas
+
+# Requirements for CRM Module - Structured RAG System
+
+# Environment variables management
+python-dotenv
+
+# Database and ORM
+sqlalchemy
+psycopg2-binary
+
+# LangChain for SQL agent and OpenAI integration
+langchain-openai
+langchain-community
+
+# Vector similarity search and embeddings
+faiss-cpu
+sentence-transformers
+
+# Scientific computing and data manipulation
+numpy
+
+# Standard library dependencies (included for completeness)
+# These are typically included with Python but listed for clarity
+# os (built-in)
+# datetime (built-in)
+# json (built-in)
+# pickle (built-in)

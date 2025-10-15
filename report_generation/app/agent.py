@@ -7,11 +7,11 @@ from langchain_openai import ChatOpenAI
 from langchain_community.utilities import SQLDatabase
 from langchain_community.agent_toolkits import create_sql_agent
 
-from app.db import engine, SessionLocal
-from app.eval import evaluate_confidence
+from .db import engine, SessionLocal
+from .eval import evaluate_confidence
 #from app.charts import auto_chart_for_result
-from app.charts import process_sql_result
-from app.insight import summarize_dataframe
+from .charts import process_sql_result
+from .insight import summarize_dataframe
 
 LAST_SQL_QUERY = None
 
@@ -77,6 +77,8 @@ def chat(user_id: int, query: str) -> dict:
         response = _agent.invoke({"input": f"{SYSTEM_SAFETY}\nUser: {query}"})
         raw_answer = response.get("output", "")
 
+
+        print("sql rag answer: ", raw_answer)
         # Confidence gating via LLM-JSON (and simple heuristics inside)
         confidence_score, reason = evaluate_confidence(query, raw_answer)
 
@@ -113,7 +115,7 @@ def chat(user_id: int, query: str) -> dict:
                 if alt:
                     sql_block = alt.group(1).strip()
 
-            from app.agent import LAST_SQL_QUERY
+            from .agent import LAST_SQL_QUERY
 
             # Use the captured SQL if regex and intermediate_steps failed
             if not sql_block and LAST_SQL_QUERY:
