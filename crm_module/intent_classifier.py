@@ -3,8 +3,8 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from dotenv import load_dotenv
 import os
 import argparse
-from structured_ragging.crm_sql_module import CRMSQLModule
-from Unstructured_ragging.query_rag import RAGQuery
+from .structured_ragging.crm_sql_module import CRMSQLModule
+from .Unstructured_ragging.query_rag import RAGQuery
 # Load environment variables from .env file
 load_dotenv()
 
