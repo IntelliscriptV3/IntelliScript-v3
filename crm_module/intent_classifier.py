@@ -2,7 +2,9 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from dotenv import load_dotenv
 import os
-
+import argparse
+from structured_ragging.crm_sql_module import CRMSQLModule
+from Unstructured_ragging.query_rag import RAGQuery
 # Load environment variables from .env file
 load_dotenv()
 
@@ -38,9 +40,12 @@ system_prompt = """You are an intent classification AI for an education institut
     Do not provide explanations or additional text - just the classification."""
 
 class IntentClassifier:
-    def __init__(self):
+    def __init__(self, user_id=1):
         self.llm = ChatOpenAI(model="gpt-4.1-mini", temperature=0)
         self.system_prompt = system_prompt
+        self.crmsql = CRMSQLModule(user_id=user_id)
+        self.crmvector = RAGQuery(user_id=user_id)
+           
 
     def identify_intent(self, user_query):
         """
@@ -79,7 +84,7 @@ class IntentClassifier:
 
             return "STRUCTURED_RAG" if structured_score >= unstructured_score else "UNSTRUCTURED_RAG"
 
-    def process_query_with_intent(self, user_query):
+    def chat(self, user_query):
         """
         Process a query by first identifying intent, then providing the classification
 
@@ -88,28 +93,45 @@ class IntentClassifier:
         """
         intent = self.identify_intent(user_query)
 
-        result = {"intent": intent}
+        print(f"Final Intent: {intent}")
         if intent == "STRUCTURED_RAG":
             # TODO: Call structured RAG processing function here
-            pass
+            response = self.crmsql.chat(user_query)
         elif intent == "UNSTRUCTURED_RAG":
-            # TODO: Call unstructured RAG processing function here
-            pass
-        else:
-            result["recommendation"] = "Unable to determine intent."
+            # Call unstructured RAG processing
+            print("\n🔍 Running Unstructured RAG...\n")
+            
+            # Unpack the three values returned by query()
+            result = self.crmvector.query(user_query)
+            
+            answer = result["answer"]
+            confidence = result["confidence"]
+            chunks = result["context_chunks"]
 
-        return result
+            # Print debug info
+            print(f"Confidence Score: {confidence}")
+            print(f"Used Chunks: {[c['id'] for c in chunks]}")
+            print(f"Status: {result['status']}")
+
+            # Set response
+            response = answer
+               
+            
+        else:
+            response = "Error: Unable to determine intent." 
+
+        return response
 
 
 # Example usage:
 if __name__ == "__main__":
-    classifier = IntentClassifier()
+    classifier = IntentClassifier(user_id=1)
     
     # Test individual intent identification
     print("\n=== Direct Intent Testing ===")
 
-    test_query = "What information do you need to enroll a new student?"
-    intent = classifier.identify_intent(test_query)
+    test_query = "is this open in poya days"
+    intent = classifier.chat(test_query)
 
     print(f"Query: {test_query}")
-    print(f"Intent: {intent}")
+    print(f"Intent_this model: {intent}")

@@ -1,0 +1,7 @@
+E:\Projects\intelliscript\OpenAI FAISS_Ragg
+
+venv\Scripts\Activate.ps1
+
+activate venv
+
+run 

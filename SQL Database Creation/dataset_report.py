@@ -6,7 +6,7 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 
 # === CONFIG ===
-DATABASE_URL = "postgresql+psycopg2://postgres:kisal123@localhost:5432/intelliscript2"
+DATABASE_URL = "postgresql+psycopg2://postgres:5737@localhost:5433/intelliscript2"
 OUTPUT_FILE = "database_report.pdf"
 ROW_LIMIT = 10   # number of sample rows per table
 

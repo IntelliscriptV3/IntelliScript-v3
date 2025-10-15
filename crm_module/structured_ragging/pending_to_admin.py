@@ -6,7 +6,7 @@ from sqlalchemy.exc import SQLAlchemyError
 
 
 class AdminQueueGeneration:
-    def __init__(self, db_link="postgresql://postgres:kisal123@localhost:5432/intelliscript2"):
+    def __init__(self, db_link="postgresql://postgres:5737@localhost:5433/intelliscript2"):
         self.engine = create_engine(db_link)
         self.SessionLocal = sessionmaker(bind=self.engine)
 

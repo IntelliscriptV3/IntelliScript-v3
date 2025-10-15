@@ -10,7 +10,7 @@ from sentence_transformers import SentenceTransformer
 import json
 
 # --- Database Setup ---
-engine = create_engine("postgresql://postgres:kisal123@localhost:5432/intelliscript2")
+engine = create_engine("postgresql://postgres:5737@localhost:5433/intelliscript2")
 SessionLocal = sessionmaker(bind=engine)
 
 class FAISSKnowledgeBase:

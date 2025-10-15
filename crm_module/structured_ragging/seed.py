@@ -4,7 +4,7 @@ Seed script for your PostgreSQL DB using SQLAlchemy ORM.
 Usage:
   1. Install dependencies: pip install sqlalchemy psycopg2-binary
   2. Set DATABASE_URL environment variable, e.g.
-       export DATABASE_URL="postgresql+psycopg2://user:pass@localhost:5433/intelliscript"
+       export DATABASE_URL="postgresql+psycopg2://user:pass@localhost:5432/intelliscript"
   3. Run: python postgres_seed_sqlalchemy.py
 
 What the script does:
@@ -43,7 +43,7 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = 'users'
     user_id = Column(Integer, primary_key=True)
-    name = Column(String(100))
+    username = Column(String(50), unique=True)
     email = Column(String(150), unique=True)
     role = Column(String)  # stored as enum in DB; keep string here
     password_hash = Column(String(255))
@@ -53,8 +53,13 @@ class Student(Base):
     __tablename__ = 'students'
     student_id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey('users.user_id'))
+    fname = Column(String(100))
+    mname = Column(String(100))
+    lname = Column(String(100))
     contact_no = Column(String(100))
-    address = Column(String(100))
+    address_line1 = Column(String(100))
+    address_line2 = Column(String(100))
+    address_line3 = Column(String(100))
     age = Column(Integer)
     stream = Column(String)
     grade = Column(String)
@@ -63,8 +68,13 @@ class Teacher(Base):
     __tablename__ = 'teachers'
     teacher_id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey('users.user_id'))
+    fname = Column(String(100))
+    mname = Column(String(100))
+    lname = Column(String(100))
     contact_no = Column(String(100))
-    address = Column(String(100))
+    address_line1 = Column(String(100))
+    address_line2 = Column(String(100))
+    address_line3 = Column(String(100))
     age = Column(Integer)
 
 class Course(Base):
@@ -105,12 +115,13 @@ class KnowledgeBase(Base):
     created_at = Column(DateTime)
 
 class AdminQueue(Base):
-    __tablename__ = 'adminQueue'
+    __tablename__ = 'admin_queue'
     queue_id = Column(Integer, primary_key=True)
     chat_id = Column(Integer)
-    admin_id = Column(Integer)
+    question = Column(Text)
+    answer = Column(Text)
+    answered_by = Column(Integer)
     assigned_at = Column(DateTime)
-    resolved_at = Column(DateTime)
 
 class Attendance(Base):
     __tablename__ = 'attendance'
@@ -163,6 +174,110 @@ INT_TO_DOW = {i: name for name, i in DOW_TO_INT.items()}
 
 # -------------------- seeding logic --------------------
 
+first_teacher_names = [
+    "Alice", "Benjamin", "Sophia", "Daniel", "Olivia", "James", "Isabella", "Liam",
+    "Mia", "Ethan", "Charlotte", "Alexander", "Amelia", "Henry", "Grace", "Michael", "Emily"
+]
+
+last_teacher_names = [
+    "Johnson", "Carter", "Miller", "Smith", "Brown", "Wilson", "Davis", "Anderson",
+    "Thompson", "Martinez", "Garcia", "Taylor", "Moore", "Thomas", "Lee", "White", "Harris"
+]
+
+# Student names - 480 unique combinations
+first_student_names = [
+    "Aiden", "Ava", "Aaron", "Abigail", "Adam", "Addison", "Adrian", "Alexa", "Alan", "Alice",
+    "Albert", "Allison", "Alex", "Amanda", "Alexander", "Amber", "Andre", "Amy", "Andrew", "Andrea",
+    "Anthony", "Angela", "Antonio", "Anna", "Apollo", "Annie", "Arthur", "Ashley", "Austin", "Audrey",
+    "Benjamin", "Bella", "Blake", "Brooke", "Brandon", "Brittany", "Brian", "Brianna", "Bruce", "Brooklyn",
+    "Caleb", "Chloe", "Cameron", "Claire", "Carlos", "Camila", "Carter", "Caroline", "Charles", "Catherine",
+    "Christian", "Charlotte", "Christopher", "Chloe", "Cole", "Christina", "Connor", "Clara", "Cooper", "Courtney",
+    "Daniel", "Daisy", "David", "Danielle", "Diego", "Diana", "Dominic", "Destiny", "Dylan", "Delilah",
+    "Ethan", "Emma", "Eli", "Emily", "Elijah", "Eva", "Elliott", "Elizabeth", "Eric", "Ella",
+    "Felix", "Faith", "Finn", "Fiona", "Frank", "Freya", "Frederick", "Felicity", "Fernando", "Flora",
+    "Gabriel", "Grace", "Gavin", "Gabriella", "George", "Genesis", "Grant", "Gianna", "Gregory", "Giselle",
+    "Harrison", "Hannah", "Henry", "Haley", "Hunter", "Harper", "Hugo", "Hailey", "Hayden", "Helen",
+    "Ian", "Isabella", "Isaac", "Iris", "Isaiah", "Ivy", "Ivan", "Isabelle", "Irving", "Ingrid",
+    "Jacob", "Jasmine", "Jackson", "Julia", "James", "Jenna", "Jason", "Jessica", "Javier", "Jennifer",
+    "Kai", "Kaia", "Kevin", "Katherine", "Kyle", "Kayla", "Kenneth", "Kimberly", "Keith", "Kylie",
+    "Liam", "Lily", "Logan", "Lucy", "Lucas", "Luna", "Luke", "Lauren", "Leo", "Layla",
+    "Mason", "Mia", "Matthew", "Madison", "Michael", "Maya", "Miles", "Megan", "Max", "Melanie",
+    "Nathan", "Natalie", "Nicholas", "Nicole", "Noah", "Nora", "Nolan", "Naomi", "Nicolas", "Nina",
+    "Oliver", "Olivia", "Owen", "Oksana", "Oscar", "Ophelia", "Otis", "Olga", "Orlando", "Octavia",
+    "Parker", "Penelope", "Patrick", "Paige", "Paul", "Piper", "Peter", "Peyton", "Philip", "Priscilla",
+    "Quinton", "Quinn", "Quentin", "Queenie", "Quade", "Quora", "Quincy", "Quinta", "Quest", "Quilla",
+    "Ryan", "Rachel", "Robert", "Rebecca", "Roman", "Riley", "Richard", "Rose", "Ryder", "Ruby",
+    "Samuel", "Sophia", "Sebastian", "Sarah", "Sean", "Samantha", "Simon", "Savannah", "Steven", "Stella",
+    "Thomas", "Taylor", "Timothy", "Tessa", "Tyler", "Trinity", "Trevor", "Tiffany", "Tristan", "Tiana",
+    "Victor", "Victoria", "Vincent", "Violet", "Vivian", "Valerie", "Vladimir", "Vanessa", "Vernon", "Vera",
+    "William", "Willow", "Walter", "Whitney", "Wesley", "Wendy", "Warren", "Wanda", "Wayne", "Winona",
+    "Xavier", "Ximena", "Xander", "Xara", "Xerxes", "Xyla", "Xavi", "Xiomara", "Xzavier", "Xenia",
+    "Zachary", "Zoe", "Zane", "Zara", "Zeus", "Zelda", "Zion", "Zuri", "Zander", "Zinnia",
+    "Abel", "Aria", "Axel", "Aurora", "Angelo", "Autumn", "Andre", "Avery", "Antonio", "Adelaide",
+    "Blake", "Brielle", "Bryce", "Bianca", "Byron", "Beatrice", "Bennett", "Bailey", "Bradford", "Beverly",
+    "Caleb", "Cecilia", "Chase", "Celeste", "Clark", "Cassandra", "Clay", "Candice", "Cruz", "Carmen",
+    "Dean", "Daphne", "Derek", "Delilah", "Donovan", "Delaney", "Drake", "Destiny", "Damon", "Dahlia",
+    "Edgar", "Elena", "Edwin", "Elise", "Ellis", "Eleanor", "Emmett", "Eliana", "Ezra", "Esther",
+    "Fletcher", "Francesca", "Ford", "Frances", "Francisco", "Fatima", "Franklin", "Fernanda", "Flynn", "Faye",
+    "Garrett", "Gemma", "Gideon", "Georgia", "Graham", "Gillian", "Griffin", "Gracie", "Gunner", "Gabrielle",
+    "Holden", "Hope", "Hudson", "Harmony", "Hayes", "Hazel", "Heath", "Heather", "Hector", "Heidi",
+    "Ira", "Imogen", "Iker", "Isla", "Ibrahim", "Iris", "Ignacio", "Irene", "Idris", "Ivy",
+    "Jace", "Jade", "Jasper", "Jacqueline", "Jude", "Jordyn", "Joel", "Joy", "Jonah", "Josephine",
+    "Kane", "Kinsley", "Knox", "Kendra", "Kaden", "Kennedy", "Kieran", "Kira", "King", "Katelyn",
+    "Lance", "Leah", "Landon", "Lillian", "Lawrence", "Lila", "Lennox", "Lydia", "Lewis", "Lola",
+    "Marcus", "Maya", "Martin", "Melody", "Mitchell", "Mila", "Morgan", "Molly", "Malik", "Megan",
+    "Nolan", "Naomi", "Neil", "Nadia", "Nash", "Natasha", "Nate", "Nora", "Nico", "Nevaeh",
+    "Owen", "Olivia", "Oscar", "Ophelia", "Otto", "Opal", "Orlando", "Oriana", "Orion", "Octavia"
+]
+
+last_student_names = [
+    "Adams", "Allen", "Anderson", "Baker", "Brown", "Clark", "Davis", "Evans", "Garcia", "Hall",
+    "Harris", "Jackson", "Johnson", "Jones", "King", "Lewis", "Lopez", "Martin", "Miller", "Moore",
+    "Nelson", "Perez", "Roberts", "Robinson", "Rodriguez", "Smith", "Taylor", "Thomas", "Thompson", "Turner",
+    "Walker", "White", "Williams", "Wilson", "Wright", "Young", "Campbell", "Carter", "Collins", "Cooper",
+    "Edwards", "Flores", "Gonzalez", "Green", "Hernandez", "Hill", "Lee", "Mitchell", "Parker", "Phillips",
+    "Reed", "Rivera", "Rogers", "Ross", "Sanchez", "Scott", "Stewart", "Torres", "Ward", "Watson",
+    "Wood", "Bailey", "Bell", "Bennett", "Brooks", "Bryant", "Butler", "Cook", "Cox", "Diaz",
+    "Foster", "Gray", "Hayes", "Henderson", "Howard", "Hughes", "Jenkins", "Kelly", "Long", "Murphy",
+    "Nguyen", "Ortiz", "Palmer", "Patterson", "Perry", "Peterson", "Powell", "Price", "Ramirez", "Reyes",
+    "Richardson", "Ramos", "Russell", "Simmons", "Sullivan", "Washington", "Wells", "West", "Wheeler", "Woods",
+    "Barnes", "Fisher", "Freeman", "Gordon", "Hart", "Harrison", "Kim", "Lawrence", "Marshall", "Mcdonald",
+    "Meyer", "Montgomery", "Morris", "Murray", "Owens", "Pierce", "Porter", "Reynolds", "Stone", "Walters",
+    "Warren", "Webb", "Wells", "Arnold", "Bishop", "Black", "Bradley", "Burns", "Carpenter", "Crawford",
+    "Daniel", "Dunn", "Ellis", "Franklin", "Gibson", "Graham", "Griffin", "Hamilton", "Harvey", "Hunt",
+    "Jordan", "Kennedy", "Lane", "Mason", "Mills", "Olson", "Pearson", "Reid", "Ruiz", "Shaw",
+    "Spencer", "Stevens", "Tucker", "Wagner", "Walsh", "Welch", "Banks", "Barrett", "Bass", "Burke",
+    "Caldwell", "Campos", "Carlson", "Casey", "Chapman", "Chavez", "Chen", "Cole", "Cortez", "Craig",
+    "Cross", "Cunningham", "Curtis", "Davidson", "Dean", "Delgado", "Dennis", "Dixon", "Duncan", "Elliott",
+    "Estrada", "Ferguson", "Fernandez", "Fleming", "Ford", "Fowler", "Fox", "Francis", "Frazier", "Fuller",
+    "Garner", "George", "Gilbert", "Gill", "Gomez", "Grant", "Graves", "Gross", "Guerrero", "Gutierrez",
+    "Hansen", "Hawkins", "Haynes", "Hicks", "Hoffman", "Holland", "Holmes", "Holt", "Hopkins", "Howell",
+    "Jacobs", "James", "Jimenez", "Johns", "Johnston", "Kelley", "Lowe", "Lucas", "Lynch", "Maldonado",
+    "Mann", "Manning", "Martinez", "Matthews", "Maxwell", "May", "Mccoy", "Mcgee", "Mckinney", "Medina",
+    "Mendoza", "Miles", "Miranda", "Morrison", "Moss", "Newton", "Nichols", "Nielsen", "Noble", "Norman",
+    "Nunez", "Oliver", "Osborne", "Owen", "Padilla", "Page", "Parks", "Parsons", "Patel", "Patrick",
+    "Payne", "Pennington", "Perkins", "Peters", "Petersen", "Pham", "Phelps", "Pope", "Preston", "Quinn",
+    "Ramsey", "Ray", "Rees", "Reeves", "Rhodes", "Rice", "Rich", "Richards", "Riley", "Rios",
+    "Robbins", "Robertson", "Roman", "Rose", "Rosario", "Roy", "Salazar", "Sanders", "Sandoval", "Santos",
+    "Savage", "Schneider", "Schultz", "Schwartz", "Sharp", "Shelton", "Shepherd", "Sherman", "Silva", "Simpson",
+    "Sims", "Singh", "Snyder", "Soto", "Sparks", "Stanton", "Stephens", "Stern", "Stevenson", "Sutton",
+    "Swanson", "Tate", "Terry", "Tran", "Underwood", "Valdez", "Vargas", "Vasquez", "Vaughn", "Vega",
+    "Villanueva", "Vincent", "Wade", "Wallace", "Walton", "Wang", "Warner", "Watkins", "Weaver", "Webster",
+    "Welch", "Werner", "Wilcox", "Wilder", "Wiley", "Wilkins", "Williamson", "Willis", "Winters", "Wise",
+    "Wolfe", "Woodard", "Woodward", "Yates", "York", "Zhang", "Zimmerman", "Abbott", "Abel", "Abrams",
+    "Acevedo", "Acosta", "Adkins", "Aguilar", "Albert", "Alexander", "Ali", "Allison", "Alvarado", "Alvarez",
+    "Anthony", "Archer", "Armstrong", "Ashton", "Austin", "Avery", "Ayala", "Ayers", "Barber", "Barker",
+    "Barr", "Barry", "Bates", "Battle", "Bauer", "Bean", "Beard", "Becker", "Benson", "Berg",
+    "Berger", "Bernard", "Berry", "Best", "Bird", "Blackwell", "Blair", "Blake", "Blanchard", "Blankenship",
+    "Boone", "Booth", "Bowen", "Bowman", "Boyd", "Bradford", "Brady", "Branch", "Bray", "Brennan",
+    "Brewer", "Briggs", "Bright", "Brock", "Brooke", "Brown", "Bruce", "Buck", "Buckley", "Bullock",
+    "Burch", "Burgess", "Burnett", "Bush", "Byrd", "Cabrera", "Cain", "Camacho", "Cameron", "Cannon",
+    "Cardenas", "Carey", "Carr", "Carson", "Cash", "Castillo", "Castro", "Chambers", "Chan", "Chandler"
+]
+
+# print("Total first names:", len(first_student_names))
+# print("Total last names:", len(last_student_names))
+
 def seed_all():
     session = Session()
     try:
@@ -181,7 +296,7 @@ def seed_all():
         # Create 5 admins
         admins = []
         for i in range(5):
-            u = User(name=f'Admin_{i+1}', email=f'admin{i+1}@inst.edu', role='admin', password_hash='axxx', created_at=datetime.now())
+            u = User(username=f'Admin_{i+1}', email=f'admin{i+1}@inst.edu', role='admin', password_hash='axxx', created_at=datetime.now())
             session.add(u)
             session.flush()  # get user_id
             admins.append(u)
@@ -205,10 +320,10 @@ def seed_all():
         for i, (subj, grade, stream) in enumerate(total_courses):
             if i > 16:
                 break
-            u = User(name=f'Teacher_{i+1}', email=f'teacher{i+1}@inst.edu', role='teacher', password_hash='txxx', created_at=datetime.now())
+            u = User(username=f'teacher{i+1}', email=f'teacher{i+1}@inst.edu', role='teacher', password_hash='txxx', created_at=datetime.now())
             session.add(u)
             session.flush()
-            t = Teacher(user_id=u.user_id, contact_no=f'+940{70000000+i%1000}', address=f'Teacher_{i+1}, Institute', age=random.randint(25,60))
+            t = Teacher(user_id=u.user_id, fname=first_teacher_names[i], lname=last_teacher_names[i], contact_no=f'+940{70000000+i%1000}', address_line1=f'No {i+1}', address_line2=f'st{i+1} road', address_line3=f'City {i+1}', age=random.randint(25,60))
             session.add(t)
             session.flush()
             teacher_objs.append((t, u))
@@ -280,11 +395,14 @@ def seed_all():
             course_objs.append(course)
             for s in range(30):
                 uname = f'Student_{idx*30+s+1}'
-                u = User(name=uname, email=f'student{idx*30+s+1}@inst.edu', role='student', password_hash='sxxx', created_at=datetime.now())
+                u = User(username=uname, email=f'student{idx*30+s+1}@inst.edu', role='student', password_hash='sxxx', created_at=datetime.now())
                 session.add(u)
                 session.flush()
-
-                s = Student(user_id=u.user_id, contact_no=f'+940{77000000+idx*30+s+1%1000}', address='Student Address', age= int(grade) + 5 if grade != 'R' else 20, stream=stream, grade=grade)
+                # print("index", idx*30+s)
+                # Use different combinations: cycle through first names and last names separately
+                first_name_idx = (idx*30+s) % len(first_student_names)
+                last_name_idx = (idx*13+s*7) % len(last_student_names)  # Different pattern for last names
+                s = Student(user_id=u.user_id, fname=first_student_names[first_name_idx], lname=last_student_names[last_name_idx], contact_no=f'+940{77000000+idx*30+s+1%1000}', address_line1=f'No {idx*30+s+1}', address_line2=f'rd{idx*30+s+1} Road', address_line3=f'City {idx*30+s+1}', age= int(grade) + 5 if grade != 'R' else 20, stream=stream, grade=grade)
                 session.add(s)
                 session.flush()
                 student_objs.append(s)

@@ -1,0 +1,16 @@
+openai
+sentence_transformers
+faiss-cpu
+numpy
+tqdm
+pdfplumber
+pdf2image
+python-docx
+python-pptx
+pytesseract
+beautifulsoup4
+pandas
+
+# Note: Set the following paths in config.py for proper functionality of OCR and PDF image processing:
+	  # TESSERACT_CMD = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+	  # POPPLER_PATH = r"C:\poppler-25.07.0\Library\bin"
