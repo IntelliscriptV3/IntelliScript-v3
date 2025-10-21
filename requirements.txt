@@ -1,0 +1,25 @@
+# Core
+python-dotenv
+
+# OpenAI + LangChain
+openai
+langchain-openai
+langchain-core
+
+# RAG / Embeddings / Vector search
+sentence-transformers
+
+numpy
+faiss-cpu
+
+# Database
+SQLAlchemy
+# Install the driver that matches your DB_URL:
+psycopg2-binary     # PostgreSQL (remove if not using Postgres)
+pymysql             # MySQL/MariaDB (remove if not using MySQL)
+
+# Optional: reporting/plots (uncomment if your report module needs them)
+# pandas>=2.0.0
+# matplotlib>=3.8.0
+# seaborn>=0.13.0
+# plotly>=5.20.0

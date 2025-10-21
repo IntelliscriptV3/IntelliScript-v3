@@ -180,7 +180,7 @@ class RAGQuery:
         """Run tagging, FAISS search, generate RAG answer with confidence,
         and fall back to structured FAISSKnowledgeBase if confidence < 0.5.
         """
-        from structured_ragging.vector_kb import FAISSKnowledgeBase  # Import only when needed
+        from ..structured_ragging.vector_kb import FAISSKnowledgeBase  # Import only when needed
 
         # --- Step 1: Embed & tag query ---
         q_emb = self.embed_model.encode([question], convert_to_numpy=True)
@@ -204,7 +204,7 @@ class RAGQuery:
             kb = FAISSKnowledgeBase()
             kb.load_index()  # load kb_faiss_index.bin and kb_metadata.pkl
 
-            kb_answer = kb.get_best_answer(question, threshold=0.5)
+            kb_answer = kb.get_best_answer(question, threshold=0.8)
             print("[Fallback Result] KB Answer:", kb_answer)
 
             if kb_answer == "No similar results found." or kb_answer is None:

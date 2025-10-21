@@ -150,7 +150,7 @@ if __name__ == "__main__":
     # Test individual intent identification
     print("\n=== Direct Intent Testing ===")
 
-    test_query = "visualize the attendance of aiden adams for the last month"
+    test_query = "visualize attendence of students in class 10 over the last month"
     intent = classifier.chat(test_query)
 
     print(f"Query: {test_query}")

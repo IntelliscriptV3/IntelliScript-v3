@@ -132,7 +132,7 @@ class CRMSQLModule:
 
             else:
                 # Step 4: No answer found
-                vector_answer = self.faiss_kb.get_best_answer(query, threshold=0.5)
+                vector_answer = self.faiss_kb.get_best_answer(query, threshold=0.8)
                 print(f"[sql_rag] Vector answer: {vector_answer}")
 
                 if vector_answer == "No similar results found." or vector_answer is None:
