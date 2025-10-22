@@ -1,3 +1,4 @@
+from fastapi import FastAPI
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from dotenv import load_dotenv
@@ -142,16 +143,26 @@ class Main:
             # Set response
         return response
 
+app = FastAPI()
+
+
+@app.get("/classify")
+def classify_query(user_query: str, user_id: int = 1):
+    classifier = Main(user_id=user_id)
+    response = classifier.chat(user_query)
+    return {"response": response}
 
 # Example usage:
 if __name__ == "__main__":
-    classifier = Main(user_id=1)
+
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
     
-    # Test individual intent identification
-    print("\n=== Direct Intent Testing ===")
+    # # Test individual intent identification
+    # print("\n=== Direct Intent Testing ===")
 
-    test_query = "visualize attendence of students in class 10 over the last month"
-    intent = classifier.chat(test_query)
+    # test_query = "visualize the attendance of aiden adams for the last month"
+    # intent = classifier.chat(test_query)
 
-    print(f"Query: {test_query}")
-    print(f"Intent_this model: {intent}")
+    # print(f"Query: {test_query}")
+    # print(f"Intent_this model: {intent}")
