@@ -8,13 +8,14 @@ from .agent import chat
 
 # @app.post("/chat")
 class ReportGeneration:
-    def __init__(self, user_id):
+    def __init__(self, user_id, user_role="student"):
         self.user_id = user_id
+        self.user_role = user_role
 
     def chat_endpoint(self, message: str):
-        return chat(self.user_id, message)
+        return chat(self.user_id, self.user_role, message)
 
 if __name__ == "__main__":
-    report_gen = ReportGeneration(user_id=1)
+    report_gen = ReportGeneration(user_id=1, user_role="student")
     response = report_gen.chat_endpoint("Show me the attendance trends for the last semester.")
     print(response)
