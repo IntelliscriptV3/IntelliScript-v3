@@ -2,10 +2,13 @@ from sqlalchemy import Column, create_engine, text, Integer, Text, DateTime
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import SQLAlchemyError
 from datetime import datetime
+from dotenv import load_dotenv
 
+import os   
 
+load_dotenv()
 class KBGeneration:
-    def __init__(self, admin_id: int, db_link="postgresql://postgres:5737@localhost:5433/intelliscript2"):
+    def __init__(self, admin_id: int, db_link=os.getenv("DB_URL")):
         self.engine = create_engine(db_link)
         self.SessionLocal = sessionmaker(bind=self.engine)
         self.admin_id = admin_id

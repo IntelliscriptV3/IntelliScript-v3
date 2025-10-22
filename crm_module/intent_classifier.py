@@ -5,6 +5,7 @@ import os
 import argparse
 from .structured_ragging.crm_sql_module import CRMSQLModule
 from .Unstructured_ragging.query_rag import RAGQuery
+from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 

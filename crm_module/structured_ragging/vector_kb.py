@@ -8,9 +8,15 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.exc import SQLAlchemyError
 from sentence_transformers import SentenceTransformer
 import json
+from dotenv import load_dotenv
+
+import os
+
+
+load_dotenv()
 
 # --- Database Setup ---
-engine = create_engine("postgresql://postgres:5737@localhost:5433/intelliscript2")
+engine = create_engine(os.getenv("DB_URL"))
 SessionLocal = sessionmaker(bind=engine)
 
 class FAISSKnowledgeBase:

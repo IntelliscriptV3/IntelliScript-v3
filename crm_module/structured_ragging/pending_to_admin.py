@@ -3,10 +3,13 @@ from datetime import datetime
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import Column, create_engine, text
 from sqlalchemy.exc import SQLAlchemyError
+from dotenv import load_dotenv
 
+import os
 
+load_dotenv()
 class AdminQueueGeneration:
-    def __init__(self, db_link="postgresql://postgres:5737@localhost:5433/intelliscript2"):
+    def __init__(self, db_link=os.getenv("DB_URL")):
         self.engine = create_engine(db_link)
         self.SessionLocal = sessionmaker(bind=self.engine)
 
